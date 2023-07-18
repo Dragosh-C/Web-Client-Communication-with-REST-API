@@ -1,4 +1,4 @@
-Topic 4 PCom - Web Client. Communication with REST API
+Web Client. Communication with REST API
 
 For data parsing, I used the Parson library [1] for C. It includes the files parson.c and parson.h. The function json_value_init_object() initializes a JSON object, and json_object_set_string() adds a string field to the JSON object. The JSON is then serialized with json_serialize_to_string() and sent to the server using the send_to_server() function. To parse the data received from the server, I created the convert_to_json function, which takes the server response as a parameter and transforms it into a JSON object.
 
